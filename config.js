@@ -1,4 +1,4 @@
-/* Paramètres publics du site الرسالة. */
+/* Public settings for الرسالة website. */
 window.SITE_CONFIG = {
   appName: 'الرسالة',
   appVersion: '0.20.1',
