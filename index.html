@@ -1,36 +1,134 @@
 <!doctype html>
 <html lang="fr">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#10251f">
-<meta name="description" content="الرسالة — The Message. Bibliothèque islamique numérique. Téléchargez l'application Android.">
-<title>الرسالة — The Message</title>
-<style>
-:root{--bg:#0b1714;--panel:#142821;--panel2:#1b342b;--gold:#d8b56d;--cream:#f5f0e4;--muted:#c1c9bf;--line:#345044;--green:#244c3d}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 50% -20%,#315541 0%,var(--bg) 58%);color:var(--cream);font-family:system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.65}a{color:inherit}.wrap{width:min(1060px,92%);margin:auto}.top{display:flex;justify-content:space-between;align-items:center;padding:20px 0}.brand{display:flex;gap:12px;align-items:center;font-weight:750;letter-spacing:.3px}.brand img{width:48px;height:48px;border-radius:14px;object-fit:cover}.lang{background:#172d25;color:var(--cream);border:1px solid var(--line);border-radius:999px;padding:9px 13px;font:inherit}.hero{text-align:center;padding:48px 0 54px}.hero .logo{width:112px;height:112px;border-radius:28px;object-fit:cover;box-shadow:0 15px 50px #0008;border:1px solid #ffffff22}.eyebrow{color:var(--gold);font-weight:700;letter-spacing:2px;font-size:.82rem;margin:20px 0 5px}h1{font-size:clamp(2.4rem,7vw,4.6rem);line-height:1.12;margin:8px 0}h1 span{color:var(--gold)}.lead{max-width:660px;margin:18px auto;color:var(--muted);font-size:1.1rem}.actions{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:28px}.btn{display:inline-flex;align-items:center;justify-content:center;text-decoration:none;padding:13px 21px;border-radius:13px;font-weight:750;border:1px solid var(--gold);transition:.2s}.btn.primary{background:var(--gold);color:#18231c}.btn.secondary{background:#172d25;color:var(--cream);border-color:var(--line)}.btn:hover{transform:translateY(-2px);filter:brightness(1.08)}.note{color:var(--muted);font-size:.9rem;margin-top:15px}.section{padding:26px 0 50px}.section h2{text-align:center;font-size:1.8rem;margin:0 0 9px}.sub{text-align:center;color:var(--muted);margin:0 auto 26px;max-width:650px}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{background:linear-gradient(145deg,var(--panel2),var(--panel));border:1px solid var(--line);border-radius:18px;padding:22px}.num{width:34px;height:34px;border-radius:50%;display:grid;place-items:center;background:#d8b56d;color:#18231c;font-weight:800;margin-bottom:12px}.card h3{margin:0 0 7px}.card p{margin:0;color:var(--muted)}.info{max-width:800px;margin:0 auto;background:#142821;border:1px solid var(--line);border-radius:18px;padding:23px}.info a{color:var(--gold)}.footer{border-top:1px solid var(--line);padding:22px 0 35px;color:var(--muted);text-align:center;font-size:.9rem}.footer a{color:var(--gold)}[dir=rtl] body{text-align:right}[dir=rtl] .top,[dir=rtl] .brand{flex-direction:row-reverse}[dir=rtl] .num{margin-left:auto;margin-right:0}
-@media(max-width:720px){.grid{grid-template-columns:1fr}.hero{padding-top:30px}.top{gap:10px}.brand{font-size:.9rem}.brand img{width:40px;height:40px}}
-</style></head>
-<body><div class="wrap">
-<header class="top"><div class="brand"><img src="assets/logo.png" alt="Logo الرسالة"><span>الرسالة — The Message</span></div><select class="lang" id="lang" aria-label="Language"><option value="fr">Français</option><option value="en">English</option><option value="ar">العربية</option></select></header>
-<main>
-<section class="hero"><img class="logo" src="assets/logo.png" alt="Logo de l'application"><div class="eyebrow" data-i="eyebrow">BIBLIOTHÈQUE ISLAMIQUE NUMÉRIQUE</div><h1>الرسالة<br><span>The Message</span></h1><p class="lead" data-i="lead">Une bibliothèque islamique à emporter avec vous : consultez vos ouvrages et ressources, et retrouvez vos contenus sur votre téléphone.</p><div class="actions"><a class="btn primary" href="https://github.com/yuuuuuuuuuuuuuuuuuuuki/The-Message-App/releases/latest" target="_blank" rel="noopener" data-i="download">Télécharger l’application Android</a><a class="btn secondary" href="https://github.com/yuuuuuuuuuuuuuuuuuuuki/The-Message-App" target="_blank" rel="noopener" data-i="github">Voir le projet sur GitHub</a></div><p class="note" data-i="version">Téléchargement depuis la page officielle des versions GitHub.</p></section>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#082d1f">
+  <meta name="description" content="الرسالة est une application Android gratuite pour étudier le Coran, écouter près de 100 récitateurs, lire des livres et apprendre les sciences islamiques.">
+  <title>الرسالة — Lire, apprendre, transmettre</title>
+  <link rel="icon" type="image/png" href="assets/risalah-emblem.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="topline"></div>
+  <header class="site-header">
+    <a class="brand" href="#accueil" aria-label="الرسالة - accueil">
+      <img src="assets/risalah-emblem.png" alt="Emblème الرسالة">
+      <span><strong>الرسالة</strong><small>LE SAVOIR À PORTÉE DE MAIN</small></span>
+    </a>
+    <nav class="desktop-nav" aria-label="Navigation principale">
+      <a href="#decouvrir" data-i18n="navDiscover">Découvrir</a>
+      <a href="#fonctionnalites" data-i18n="navFeatures">Fonctionnalités</a>
+      <a href="#a-propos" data-i18n="navAbout">À propos</a>
+      <a href="#sadaqa" data-i18n="navSadaqa">Sadaqa</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <div class="header-actions">
+      <label class="language-select"><span class="sr-only">Langue du site</span>
+        <select id="languageSelect" aria-label="Langue"><option value="fr">FR</option><option value="en">EN</option><option value="ar">عربي</option></select>
+      </label>
+      <a class="button button-small button-outline header-support" href="#soutenir" data-i18n="navSupport">Soutenir</a>
+      <a class="button button-small button-gold header-download" href="#telecharger" data-i18n="navDownload">Télécharger</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Ouvrir le menu" aria-expanded="false"><span></span><span></span></button>
+    </div>
+  </header>
+  <main>
+    <section class="hero" id="accueil">
+      <div class="hero-pattern"></div>
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="eyebrow-line"></span><span data-i18n="eyebrow">LE SAVOIR À PORTÉE DE MAIN</span></div>
+        <h1 data-i18n="heroTitle">Lire. Écouter.<br><em>Apprendre et transmettre.</em></h1>
+        <p class="hero-lead" data-i18n="heroLead">Une bibliothèque islamique dans votre poche : le Coran, près de 100 récitateurs, une vaste collection de livres, des hadiths, des invocations et des outils pour accompagner votre apprentissage au quotidien.</p>
+        <div class="hero-buttons">
+          <a class="button button-gold button-large" href="#telecharger"><span class="download-icon">↓</span><span data-i18n="heroCta">Télécharger gratuitement</span></a>
+          <a class="text-link" href="#fonctionnalites" data-i18n="heroSecondary">Explorer les fonctionnalités <span>↗</span></a>
+        </div>
+        <div class="hero-note"><span class="status-dot"></span><span data-i18n="heroNote">Application Android · Accès gratuit · Interface en 3 langues</span></div>
+      </div>
+      <div class="hero-art" aria-label="Emblème de الرسالة">
+        <div class="art-halo"></div><div class="art-ring"></div>
+        <img src="assets/risalah-emblem.png" alt="Emblème calligraphique islamique de الرسالة">
+        <div class="art-caption"><span>بِسْمِ اللَّهِ</span><small>الرسالة</small></div>
+      </div>
+      <div class="hero-bottom"><span>01 / 04</span><span class="hero-bottom-line"></span><span data-i18n="heroBottom">UNE RESSOURCE POUR VOTRE CHEMINEMENT</span></div>
+    </section>
 
-<section class="section" id="tafsir">
-  <div class="info">
-    <h2 data-i="tafsirTitle">Le tafsir de chaque verset à portée de main</h2>
-    <p class="sub" data-i="tafsirSub">Dans la lecture du Coran, appuyez sur un verset pour consulter son tafsir et approfondir sa compréhension.</p>
-    <p data-i="tafsirDetail">Chaque verset peut être sélectionné individuellement afin d’ouvrir son explication (tafsir) directement dans l’application, sans devoir chercher manuellement le commentaire correspondant.</p>
-  </div>
-</section>
-<section class="section" id="guide"><h2 data-i="guideTitle">Comment télécharger l’application ?</h2><p class="sub" data-i="guideSub">Suivez ces quelques étapes sur votre téléphone Android.</p><div class="grid"><article class="card"><div class="num">1</div><h3 data-i="step1Title">Ouvrir la page de téléchargement</h3><p data-i="step1">Appuyez sur « Télécharger l’application Android » pour ouvrir la dernière version publiée sur GitHub.</p></article><article class="card"><div class="num">2</div><h3 data-i="step2Title">Télécharger le fichier APK</h3><p data-i="step2">Dans la section Assets, appuyez sur <b>app-release.apk</b> et attendez la fin du téléchargement.</p></article><article class="card"><div class="num">3</div><h3 data-i="step3Title">Installer l’application</h3><p data-i="step3">Ouvrez le fichier téléchargé. Si Android le demande, autorisez temporairement l’installation depuis ce navigateur, puis appuyez sur Installer.</p></article></div></section>
-<section class="section"><div class="info"><h2 data-i="importantTitle">À savoir</h2><p data-i="important">Pour mettre à jour l’application, installez le nouvel APK par-dessus la version déjà installée. Ne désinstallez pas l’ancienne application : cela peut supprimer vos données locales. Android peut afficher un avertissement avant l’installation d’un APK téléchargé hors du Play Store.</p><p><a href="https://github.com/yuuuuuuuuuuuuuuuuuuuki/The-Message-App/releases" target="_blank" rel="noopener" data-i="allReleases">Consulter toutes les versions publiées</a></p></div></section>
-</main><footer class="footer"><span data-i="footer">الرسالة — The Message · Projet et téléchargements officiels sur</span> <a href="https://github.com/yuuuuuuuuuuuuuuuuuuuki/The-Message-App" target="_blank" rel="noopener">GitHub</a></footer>
-</div>
-<script>
-const T={
-fr:{eyebrow:'BIBLIOTHÈQUE ISLAMIQUE NUMÉRIQUE',lead:'Une bibliothèque islamique à emporter avec vous : consultez vos ouvrages et ressources, et retrouvez vos contenus sur votre téléphone.',download:'Télécharger l’application Android',github:'Voir le projet sur GitHub',version:'Téléchargement depuis la page officielle des versions GitHub.',tafsirTitle:'Le tafsir de chaque verset à portée de main',tafsirSub:'Dans la lecture du Coran, appuyez sur un verset pour consulter son tafsir et approfondir sa compréhension.',tafsirDetail:'Chaque verset peut être sélectionné individuellement afin d’ouvrir son explication (tafsir) directement dans l’application, sans devoir chercher manuellement le commentaire correspondant.',guideTitle:'Comment télécharger l’application ?',guideSub:'Suivez ces quelques étapes sur votre téléphone Android.',step1Title:'Ouvrir la page de téléchargement',step1:'Appuyez sur « Télécharger l’application Android » pour ouvrir la dernière version publiée sur GitHub.',step2Title:'Télécharger le fichier APK',step2:'Dans la section Assets, appuyez sur app-release.apk et attendez la fin du téléchargement.',step3Title:'Installer l’application',step3:'Ouvrez le fichier téléchargé. Si Android le demande, autorisez temporairement l’installation depuis ce navigateur, puis appuyez sur Installer.',importantTitle:'À savoir',important:'Pour mettre à jour l’application, installez le nouvel APK par-dessus la version déjà installée. Ne désinstallez pas l’ancienne application : cela peut supprimer vos données locales. Android peut afficher un avertissement avant l’installation d’un APK téléchargé hors du Play Store.',allReleases:'Consulter toutes les versions publiées',footer:'الرسالة — The Message · Projet et téléchargements officiels sur'},
-en:{eyebrow:'DIGITAL ISLAMIC LIBRARY',lead:'An Islamic library you can carry with you. Explore books and resources and access your content on your phone.',download:'Download the Android app',github:'View the project on GitHub',version:'Downloads are provided through the official GitHub Releases page.',tafsirTitle:'Tafsir for every verse, just a tap away',tafsirSub:'While reading the Quran, tap a verse to view its tafsir and deepen your understanding.',tafsirDetail:'Each verse can be selected individually to open its explanation (tafsir) directly in the app, without having to search for the corresponding commentary manually.',guideTitle:'How to download the app',guideSub:'Follow these simple steps on your Android phone.',step1Title:'Open the download page',step1:'Tap “Download the Android app” to open the latest release on GitHub.',step2Title:'Download the APK file',step2:'Under Assets, tap app-release.apk and wait for the download to finish.',step3Title:'Install the app',step3:'Open the downloaded file. If Android asks, temporarily allow installation from this browser, then tap Install.',importantTitle:'Important',important:'To update the app, install the new APK over the existing version. Do not uninstall the old app, as this may erase local data. Android may show a warning before installing an APK downloaded outside the Play Store.',allReleases:'View all published releases',footer:'الرسالة — The Message · Official project and downloads on'},
-ar:{eyebrow:'مكتبة إسلامية رقمية',lead:'مكتبة إسلامية ترافقك أينما كنت. تصفّح الكتب والمصادر واستفد من محتواك على هاتفك.',download:'تحميل تطبيق أندرويد',github:'عرض المشروع على GitHub',version:'التحميل متاح عبر صفحة الإصدارات الرسمية على GitHub.',tafsirTitle:'تفسير كل آية بلمسة واحدة',tafsirSub:'أثناء قراءة القرآن، اضغط على أي آية للاطلاع على تفسيرها والتعمق في فهمها.',tafsirDetail:'يمكنك اختيار كل آية على حدة لفتح شرحها (التفسير) مباشرة داخل التطبيق، دون الحاجة إلى البحث يدوياً عن التفسير المناسب.',guideTitle:'كيفية تحميل التطبيق؟',guideSub:'اتبع هذه الخطوات البسيطة على هاتف أندرويد.',step1Title:'افتح صفحة التحميل',step1:'اضغط على «تحميل تطبيق أندرويد» لفتح أحدث إصدار منشور على GitHub.',step2Title:'حمّل ملف APK',step2:'في قسم Assets اضغط على app-release.apk وانتظر اكتمال التحميل.',step3Title:'ثبّت التطبيق',step3:'افتح الملف الذي تم تحميله. إذا طلب أندرويد ذلك، اسمح مؤقتاً بالتثبيت من هذا المتصفح ثم اضغط على تثبيت.',importantTitle:'تنبيه مهم',important:'لتحديث التطبيق، ثبّت ملف APK الجديد فوق النسخة الحالية. لا تحذف التطبيق القديم، فقد يؤدي ذلك إلى فقدان البيانات المحفوظة محلياً. قد يعرض أندرويد تحذيراً قبل تثبيت ملف APK من خارج متجر Play.',allReleases:'عرض جميع الإصدارات المنشورة',footer:'الرسالة — The Message · المشروع والتحميل الرسمي على'}
-};
-function setLang(l){const d=T[l]||T.fr;document.documentElement.lang=l;document.documentElement.dir=l==='ar'?'rtl':'ltr';document.querySelectorAll('[data-i]').forEach(e=>{const k=e.dataset.i;if(d[k])e.textContent=d[k]});document.getElementById('lang').value=l}document.getElementById('lang').addEventListener('change',e=>setLang(e.target.value));setLang('fr');
-</script></body></html>
+    <section class="intro section-wrap" id="decouvrir">
+      <div class="section-kicker" data-i18n="introKicker">LA CONNAISSANCE, SIMPLEMENT</div>
+      <div class="intro-grid">
+        <h2 data-i18n="introTitle">Un espace pour<br><em>étudier à votre rythme.</em></h2>
+        <div><p data-i18n="introText">الرسالة rassemble des ressources de lecture et d'étude dans une seule application. Retrouvez vos lectures, approfondissez vos connaissances et organisez votre révision depuis votre téléphone.</p><a class="underlined-link" href="#a-propos" data-i18n="learnMore">En savoir plus <span>→</span></a></div>
+      </div>
+      <div class="stat-strip">
+        <div><strong>~100</strong><span data-i18n="statSurahs">récitateurs disponibles</span></div>
+        <div><strong>2</strong><span data-i18n="statReadings">lectures · Hafs & Warsh</span></div>
+        <div><strong>≈40</strong><span data-i18n="statBooks">livres & recueils</span></div>
+        <div><strong>~30</strong><span data-i18n="statCourses">cours audio</span></div>
+        <div><strong>3</strong><span data-i18n="statLanguages">langues d’interface</span></div>
+        <div><strong>0 €</strong><span data-i18n="statPrice">téléchargement gratuit</span></div>
+      </div>
+    </section>
+
+    <section class="features-section" id="fonctionnalites">
+      <div class="section-wrap">
+        <div class="section-heading"><div><div class="section-kicker" data-i18n="featuresKicker">DANS L’APPLICATION</div><h2 data-i18n="featuresTitle">Des ressources pour<br><em>chaque étape.</em></h2></div><p data-i18n="featuresLead">Un environnement pensé pour la lecture, l'écoute, l'étude et la mémorisation.</p></div>
+        <div class="feature-grid">
+          <article class="feature-card feature-card-large"><div class="feature-number">01</div><div class="feature-icon">۞</div><h3 data-i18n="fQuranTitle">Le Saint Coran</h3><p data-i18n="fQuranText">Consultez le Mushaf avec les lectures Hafs et Warsh. Retrouvez vos sourates, marque-pages et outils d’apprentissage et de révision.</p><div class="feature-tags"><span>HAFS</span><span>WARSH</span><span>HIFZ</span></div></article>
+          <article class="feature-card"><div class="feature-number">02</div><div class="feature-icon">▤</div><h3 data-i18n="fBooksTitle">Bibliothèque de livres</h3><p data-i18n="fBooksText">Explorez une grande collection de livres pour apprendre les bases et approfondir les sciences islamiques, classés par disciplines.</p></article>
+          <article class="feature-card"><div class="feature-number">03</div><div class="feature-icon">❞</div><h3 data-i18n="fHadithTitle">Hadiths & mutun</h3><p data-i18n="fHadithText">Retrouvez des recueils de hadiths, des textes de référence et leurs ressources d’étude.</p></article>
+          <article class="feature-card"><div class="feature-number">04</div><div class="feature-icon">♫</div><h3 data-i18n="fAudioTitle">Écoute & récitations</h3><p data-i18n="fAudioText">Accédez aux ressources audio disponibles pour accompagner vos lectures et vos révisions.</p></article>
+          <article class="feature-card"><div class="feature-number">05</div><div class="feature-icon">✧</div><h3 data-i18n="fLangTitle">Trois langues</h3><p data-i18n="fLangText">Utilisez l’interface en arabe, en français ou en anglais selon votre préférence.</p></article>
+          <article class="feature-card"><div class="feature-number">06</div><div class="feature-icon">۞</div><h3 data-i18n="fAdhkarTitle">Adhkar & invocations</h3><p data-i18n="fAdhkarText">Retrouvez les invocations du quotidien et la Citadelle du musulman pour nourrir votre rappel d’Allah.</p></article>
+          <article class="feature-card"><div class="feature-number">07</div><div class="feature-icon">⌁</div><h3 data-i18n="fLearningTitle">Apprendre & réviser</h3><p data-i18n="fLearningText">Organisez votre mémorisation du Coran, sauvegardez vos sourates et reprenez votre progression.</p></article>
+          <article class="feature-card"><div class="feature-number">08</div><div class="feature-icon">✎</div><h3 data-i18n="fStudyTitle">Sciences islamiques</h3><p data-i18n="fStudyText">Étudiez l’aqidah, le fiqh, le tajwid, la langue arabe, l’adab et les sciences du hadith.</p></article>
+          <article class="feature-card"><div class="feature-number">09</div><div class="feature-icon">❞</div><h3 data-i18n="fNawawiTitle">Les 40 hadiths de Nawawi</h3><p data-i18n="fNawawiText">Approfondissez les grands fondements de la religion à travers un recueil incontournable.</p></article>
+          <article class="feature-card feature-card-quote"><div class="quote-mark">“</div><p data-i18n="quoteText">La régularité dans l’apprentissage commence par un accès simple aux ressources.</p><span data-i18n="quoteCaption">VOTRE ESPACE D’ÉTUDE</span></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="about section-wrap" id="a-propos">
+      <div class="about-emblem"><div class="emblem-frame"><img src="assets/risalah-emblem.png" alt="Emblème de l'application"></div><span class="arabic-line">طَلَبُ الْعِلْمِ</span></div>
+      <div class="about-copy"><div class="section-kicker" data-i18n="aboutKicker">NOTRE INTENTION</div><h2 data-i18n="aboutTitle">Un outil simple,<br><em>au service du savoir.</em></h2><p data-i18n="aboutText">الرسالة rassemble dans une seule application des outils pour lire le Coran, écouter ses récitations, étudier les livres et apprendre les sciences islamiques. Le projet souhaite rendre le savoir accessible au plus grand nombre.</p><p class="about-note" data-i18n="aboutNote">Pourquoi est-ce gratuit ? Parce que ce projet est une sadaqa : un travail offert dans l’espoir qu’il soit utile, qu’il aide chacun à apprendre et que sa récompense perdure. Aucun abonnement ni paiement n’est demandé pour accéder à l’application.</p><a class="button button-outline" href="#telecharger" data-i18n="aboutCta">Obtenir l’application <span>→</span></a></div>
+    </section>
+
+    <section class="sadaqa-section section-wrap" id="sadaqa"><div class="sadaqa-mark">صدقة جارية</div><div class="sadaqa-copy"><div class="section-kicker" data-i18n="sadaqaKicker">UN PROJET OFFERT</div><h2 data-i18n="sadaqaTitle">Le savoir se partage.<br><em>Cette application est une sadaqa.</em></h2><p data-i18n="sadaqaText">الرسالة est gratuit par choix. Il a été créé pour que chacun puisse accéder aux ressources, apprendre et avancer, sans barrière financière. Si l’application vous est utile, partagez-la autour de vous : vous aiderez peut-être quelqu’un à faire un pas dans son apprentissage.</p><div class="sadaqa-pill" data-i18n="sadaqaFoot">Gratuit · Sans abonnement · Pour tous</div></div></section>
+
+    <section class="support-section section-wrap" id="soutenir">
+      <div class="support-card">
+        <div class="support-symbol" aria-hidden="true">♡</div>
+        <div class="section-kicker" data-i18n="supportKicker">SOUTIEN FACULTATIF</div>
+        <h2 data-i18n="supportTitle">الرسالة est gratuit. <em>Et le restera.</em></h2>
+        <p data-i18n="supportText">L’application est entièrement gratuite : toutes ses fonctionnalités et tous ses contenus sont accessibles sans abonnement, sans paiement et sans formule premium. Le Patreon n’a aucun lien avec l’accès à l’application. Si vous choisissez de me soutenir, votre contribution m’aidera personnellement à développer d’autres projets. C’est un geste totalement facultatif, simplement pour m’encourager.</p>
+        <div class="support-points"><span data-i18n="supportPoint1">Aucun contenu payant</span><span data-i18n="supportPoint2">Aucun avantage réservé aux donateurs</span><span data-i18n="supportPoint3">Soutien libre, si vous le souhaitez</span></div>
+        <a class="button button-gold button-large" id="patreonButton" href="#soutenir" target="_blank" rel="noopener" data-i18n="supportCta">Me soutenir sur Patreon</a>
+        <small class="support-note" data-i18n="supportNote">Merci pour votre soutien. Il n’est jamais nécessaire pour utiliser الرسالة.</small>
+      </div>
+    </section>
+
+    <section class="download-section" id="telecharger">
+      <div class="download-ornament"></div>
+      <div class="download-content"><div class="section-kicker section-kicker-light" data-i18n="downloadKicker">COMMENCEZ DÈS AUJOURD’HUI</div><h2 data-i18n="downloadTitle">Votre bibliothèque<br><em>vous accompagne.</em></h2><p data-i18n="downloadText">Téléchargez gratuitement l’application Android et gardez vos ressources d’étude à portée de main.</p><a class="button button-gold button-large" id="downloadButton" href="https://github.com/VOTRE-PSEUDO/bibliotheque-islamique/releases/latest" target="_blank" rel="noopener"><span class="download-icon">↓</span><span data-i18n="downloadCta">Télécharger l’APK gratuit</span></a><div class="download-meta"><span>ANDROID</span><i></i><span data-i18n="versionLabel">Version</span> <strong id="appVersion">0.19.1</strong><i></i><span data-i18n="freeLabel">Gratuit</span></div><p class="install-hint" data-i18n="installHint">Le téléchargement s’effectue depuis GitHub Releases. Android peut demander l’autorisation d’installer une application provenant de cette source.</p></div>
+    </section>
+
+    <section class="contact-section section-wrap" id="contact">
+      <div class="section-kicker" data-i18n="contactKicker">PARTICIPER AU PROJET</div>
+      <div class="contact-grid"><h2 data-i18n="contactTitle">Une idée pour améliorer l’application ?</h2><div><p data-i18n="contactText">Vous avez une idée, une suggestion ou vous avez repéré un bug ? Envoyez-moi un e-mail à tout moment.</p><a class="button button-outline" id="contactEmailButton" href="mailto:VOTRE-ADRESSE-E-MAIL" data-i18n="contactCta">Envoyer une idée ou signaler un bug</a></div></div>
+    </section>
+
+    <section class="faq section-wrap" id="faq"><div class="section-heading"><div><div class="section-kicker" data-i18n="faqKicker">BESOIN D’AIDE ?</div><h2 data-i18n="faqTitle">Questions<br><em>fréquentes.</em></h2></div><p data-i18n="faqLead">Quelques informations utiles avant l’installation.</p></div>
+      <div class="faq-list">
+        <details><summary data-i18n="faq1q">L’application est-elle gratuite ? <span>+</span></summary><p data-i18n="faq1a">Oui. Le téléchargement de l’application est gratuit. Le site et les fichiers de publication sont hébergés sur GitHub.</p></details>
+        <details><summary data-i18n="faq2q">Comment installer le fichier APK ? <span>+</span></summary><p data-i18n="faq2a">Téléchargez le fichier APK depuis la page des versions GitHub, ouvrez-le sur votre téléphone Android puis autorisez l’installation si Android vous le demande.</p></details>
+        <details><summary data-i18n="faq3q">L’application fonctionne-t-elle sans Internet ? <span>+</span></summary><p data-i18n="faq3a">Certaines fonctions et ressources sont disponibles localement, tandis que les contenus en streaming et certaines ressources nécessitent une connexion Internet.</p></details>
+        <details><summary data-i18n="faq4q">Où trouver les nouvelles versions ? <span>+</span></summary><p data-i18n="faq4a">Les mises à jour sont publiées dans la section Releases du dépôt GitHub officiel.</p></details>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer"><div class="footer-main"><a class="brand footer-brand" href="#accueil"><img src="assets/risalah-emblem.png" alt=""><span><strong>الرسالة</strong><small>LE SAVOIR À PORTÉE DE MAIN</small></span></a><p data-i18n="footerText">Un espace de lecture, d’apprentissage et de révision.</p><a class="footer-download" href="#telecharger" data-i18n="footerDownload">Télécharger gratuitement ↗</a></div><div class="footer-bottom"><span>© <span id="year"></span> الرسالة</span><span data-i18n="footerFree">Projet gratuit · Android</span><a href="#accueil" data-i18n="backTop">Retour en haut ↑</a></div></footer>
+  <script src="config.js"></script><script src="script.js"></script>
+</body>
+</html>
