@@ -6,14 +6,14 @@ Site statique trilingue (français, anglais, arabe), responsive et en thème som
 
 Le nom affiché du projet est **الرسالة**. Vérifiez les noms d’applications, les domaines et les éventuelles marques avant une publication commerciale.
 
-Modifiez `config.js` pour indiquer le dépôt GitHub réel. Le fichier APK de la Release doit s'appeler `ar-risalah.apk`, ou adaptez `apkUrl`. La version affichée est actuellement 0.19.1.
+Modifiez `config.js` pour indiquer le dépôt GitHub réel. Le fichier APK de la Release doit s'appeler `app-release.apk`. La version affichée est actuellement 0.20.1.
 
 ## Publication gratuite
 
 1. Créez un dépôt GitHub public pour le site et téléversez le contenu de ce dossier.
 2. Dans **Settings → Pages**, choisissez **Deploy from a branch**, branche `main`, dossier `/ (root)`.
 3. Publiez le fichier APK signé dans les Releases du dépôt de l'application.
-4. Modifiez `config.js` avec le bon pseudo, dépôt, version et nom exact du fichier APK.
+4. Le dépôt configuré est `yuuuuuuuuuuuuuuuuuuuki/The-Message-App` et le lien de téléchargement pointe directement vers `app-release.apk` dans la dernière Release.
 
 GitHub Pages héberge le site statique et GitHub Releases distribue l'APK. Aucun serveur payant n'est nécessaire.
 
