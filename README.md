@@ -1,30 +1,36 @@
 # الرسالة — site officiel
 
-Site statique trilingue (français, anglais, arabe), responsive et en thème sombre par défaut.
+Site statique trilingue (français, anglais, arabe), responsive et en thème sombre par défaut. Hébergement gratuit possible avec GitHub Pages.
 
-## Publication sur le dépôt existant
+## Personnalisation avant publication
 
-Ce dossier est la mise à jour du site existant : il conserve la structure, le design, les sections et les ressources déjà présentes, avec l’ajout du tafsir et les liens corrigés.
+Le nom affiché du projet est **الرسالة**. Vérifiez les noms d’applications, les domaines et les éventuelles marques avant une publication commerciale.
 
-1. Copier le contenu de ce dossier dans le dossier `docs/` du dépôt GitHub `yuuuuuuuuuuuuuuuuuuuki/The-Message-App`.
-2. Remplacer les fichiers existants, sans créer un nouveau dépôt.
-3. Dans **Settings → Pages**, choisir **Deploy from a branch**, branche `main`, dossier `/docs`, puis enregistrer.
-4. Publier la version Android dans les Releases du dépôt avec le fichier `app-release.apk`.
+Modifiez `config.js` pour indiquer le dépôt GitHub réel. Le fichier APK de la Release doit s'appeler `ar-risalah.apk`, ou adaptez `apkUrl`. La version affichée est actuellement 0.19.1.
 
-## Liens configurés
+## Publication gratuite
 
-- Dépôt : https://github.com/yuuuuuuuuuuuuuuuuuuuki/The-Message-App
-- Releases : https://github.com/yuuuuuuuuuuuuuuuuuuuki/The-Message-App/releases/latest
-- APK : https://github.com/yuuuuuuuuuuuuuuuuuuuki/The-Message-App/releases/latest/download/app-release.apk
-- Version affichée : 0.20.1
+1. Créez un dépôt GitHub public pour le site et téléversez le contenu de ce dossier.
+2. Dans **Settings → Pages**, choisissez **Deploy from a branch**, branche `main`, dossier `/ (root)`.
+3. Publiez le fichier APK signé dans les Releases du dépôt de l'application.
+4. Modifiez `config.js` avec le bon pseudo, dépôt, version et nom exact du fichier APK.
 
-Le bouton de téléchargement pointe vers le dernier APK nommé `app-release.apk`. Le lien fonctionnera lorsque cette pièce jointe aura été publiée dans une Release GitHub.
+GitHub Pages héberge le site statique et GitHub Releases distribue l'APK. Aucun serveur payant n'est nécessaire.
 
-## Fonctionnalités présentées
+## Contenu présenté
 
-- Coran avec lectures Hafs et Warsh.
-- Tafsir des versets accessible depuis la lecture.
-- Livres, recueils de hadiths, adhkar et Citadelle du musulman.
-- Audio, récitations et outils d’apprentissage.
-- Interface en français, anglais et arabe.
-- Soutien Patreon facultatif ; l’application reste gratuite.
+- Coran avec lectures Hafs et Warsh, outils d'apprentissage et de révision.
+- Près de 100 récitateurs (information fournie par le développeur de l'application).
+- Grande collection de livres et disciplines islamiques.
+- Hadiths, dont les 40 hadiths de Nawawi, adhkar et Citadelle du musulman.
+- Apprentissage, mémorisation, langues arabe/français/anglais.
+- Explication de la gratuité comme sadaqa.
+
+Le site décrit les fonctions annoncées par le développeur. Certaines ressources audio ou en ligne peuvent nécessiter Internet.
+
+
+## Soutien facultatif et contact
+Le lien Patreon est déjà configuré : https://www.patreon.com/TheLastMessage.
+L’application reste entièrement gratuite, sans abonnement ni contenu payant. Le soutien Patreon est facultatif et sert uniquement à aider le développeur personnellement à réaliser d’autres projets ; il ne donne aucun accès ni avantage dans l’application.
+
+Les idées, suggestions et signalements de bugs peuvent être envoyés à thelastmessageoff@gmail.com.
