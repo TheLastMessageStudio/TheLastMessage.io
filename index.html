@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#082d1f">
+  <meta name="description" content="الرسالة est une application Android gratuite pour étudier le Coran, écouter près de 100 récitateurs, lire des livres et apprendre les sciences islamiques.">
+  <title>الرسالة — Lire, apprendre, transmettre</title>
+  <link rel="icon" type="image/png" href="assets/risalah-emblem.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="topline"></div>
+  <header class="site-header">
+    <a class="brand" href="#accueil" aria-label="الرسالة - accueil">
+      <img src="assets/risalah-emblem.png" alt="Emblème الرسالة">
+      <span><strong>الرسالة</strong><small>LE SAVOIR À PORTÉE DE MAIN</small></span>
+    </a>
+    <nav class="desktop-nav" aria-label="Navigation principale">
+      <a href="#decouvrir" data-i18n="navDiscover">Découvrir</a>
+      <a href="#fonctionnalites" data-i18n="navFeatures">Fonctionnalités</a>
+      <a href="#a-propos" data-i18n="navAbout">À propos</a>
+      <a href="#sadaqa" data-i18n="navSadaqa">Sadaqa</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <div class="header-actions">
+      <label class="language-select"><span class="sr-only">Langue du site</span>
+        <select id="languageSelect" aria-label="Langue"><option value="fr">FR</option><option value="en">EN</option><option value="ar">عربي</option></select>
+      </label>
+      <a class="button button-small button-outline header-support" href="#soutenir" data-i18n="navSupport">Soutenir</a>
+      <a class="button button-small button-gold header-download" href="#telecharger" data-i18n="navDownload">Télécharger</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Ouvrir le menu" aria-expanded="false"><span></span><span></span></button>
+    </div>
+  </header>
+  <main>
+    <section class="hero" id="accueil">
+      <div class="hero-pattern"></div>
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="eyebrow-line"></span><span data-i18n="eyebrow">LE SAVOIR À PORTÉE DE MAIN</span></div>
+        <h1 data-i18n="heroTitle">Lire. Écouter.<br><em>Apprendre et transmettre.</em></h1>
+        <p class="hero-lead" data-i18n="heroLead">Une bibliothèque islamique dans votre poche : le Coran, près de 100 récitateurs, une vaste collection de livres, des hadiths, des invocations et des outils pour accompagner votre apprentissage au quotidien.</p>
+        <div class="hero-buttons">
+          <a class="button button-gold button-large" href="#telecharger"><span class="download-icon">↓</span><span data-i18n="heroCta">Télécharger gratuitement</span></a>
+          <a class="text-link" href="#fonctionnalites" data-i18n="heroSecondary">Explorer les fonctionnalités <span>↗</span></a>
+        </div>
+        <div class="hero-note"><span class="status-dot"></span><span data-i18n="heroNote">Application Android · Accès gratuit · Interface en 3 langues</span></div>
+      </div>
+      <div class="hero-art" aria-label="Emblème de الرسالة">
+        <div class="art-halo"></div><div class="art-ring"></div>
+        <img src="assets/risalah-emblem.png" alt="Emblème calligraphique islamique de الرسالة">
+        <div class="art-caption"><span>بِسْمِ اللَّهِ</span><small>الرسالة</small></div>
+      </div>
+      <div class="hero-bottom"><span>01 / 04</span><span class="hero-bottom-line"></span><span data-i18n="heroBottom">UNE RESSOURCE POUR VOTRE CHEMINEMENT</span></div>
+    </section>
+
+    <section class="intro section-wrap" id="decouvrir">
+      <div class="section-kicker" data-i18n="introKicker">LA CONNAISSANCE, SIMPLEMENT</div>
+      <div class="intro-grid">
+        <h2 data-i18n="introTitle">Un espace pour<br><em>étudier à votre rythme.</em></h2>
+        <div><p data-i18n="introText">الرسالة rassemble des ressources de lecture et d'étude dans une seule application. Retrouvez vos lectures, approfondissez vos connaissances et organisez votre révision depuis votre téléphone.</p><a class="underlined-link" href="#a-propos" data-i18n="learnMore">En savoir plus <span>→</span></a></div>
+      </div>
+      <div class="stat-strip">
+        <div><strong>~100</strong><span data-i18n="statSurahs">récitateurs disponibles</span></div>
+        <div><strong>2</strong><span data-i18n="statReadings">lectures · Hafs & Warsh</span></div>
+        <div><strong>≈40</strong><span data-i18n="statBooks">livres & recueils</span></div>
+        <div><strong>~30</strong><span data-i18n="statCourses">cours audio</span></div>
+        <div><strong>3</strong><span data-i18n="statLanguages">langues d’interface</span></div>
+        <div><strong>0 €</strong><span data-i18n="statPrice">téléchargement gratuit</span></div>
+      </div>
+    </section>
+
+    <section class="features-section" id="fonctionnalites">
+      <div class="section-wrap">
+        <div class="section-heading"><div><div class="section-kicker" data-i18n="featuresKicker">DANS L’APPLICATION</div><h2 data-i18n="featuresTitle">Des ressources pour<br><em>chaque étape.</em></h2></div><p data-i18n="featuresLead">Un environnement pensé pour la lecture, l'écoute, l'étude et la mémorisation.</p></div>
+        <div class="feature-grid">
+          <article class="feature-card feature-card-large"><div class="feature-number">01</div><div class="feature-icon">۞</div><h3 data-i18n="fQuranTitle">Le Saint Coran</h3><p data-i18n="fQuranText">Consultez le Mushaf avec les lectures Hafs et Warsh. Retrouvez vos sourates, marque-pages et outils d’apprentissage et de révision.</p><div class="feature-tags"><span>HAFS</span><span>WARSH</span><span>HIFZ</span></div></article>
+          <article class="feature-card"><div class="feature-number">02</div><div class="feature-icon">▤</div><h3 data-i18n="fBooksTitle">Bibliothèque de livres</h3><p data-i18n="fBooksText">Explorez une grande collection de livres pour apprendre les bases et approfondir les sciences islamiques, classés par disciplines.</p></article>
+          <article class="feature-card"><div class="feature-number">03</div><div class="feature-icon">❞</div><h3 data-i18n="fHadithTitle">Hadiths & mutun</h3><p data-i18n="fHadithText">Retrouvez des recueils de hadiths, des textes de référence et leurs ressources d’étude.</p></article>
+          <article class="feature-card"><div class="feature-number">04</div><div class="feature-icon">♫</div><h3 data-i18n="fAudioTitle">Écoute & récitations</h3><p data-i18n="fAudioText">Accédez aux ressources audio disponibles pour accompagner vos lectures et vos révisions.</p></article>
+          <article class="feature-card"><div class="feature-number">05</div><div class="feature-icon">✧</div><h3 data-i18n="fLangTitle">Trois langues</h3><p data-i18n="fLangText">Utilisez l’interface en arabe, en français ou en anglais selon votre préférence.</p></article>
+          <article class="feature-card"><div class="feature-number">06</div><div class="feature-icon">۞</div><h3 data-i18n="fAdhkarTitle">Adhkar & invocations</h3><p data-i18n="fAdhkarText">Retrouvez les invocations du quotidien et la Citadelle du musulman pour nourrir votre rappel d’Allah.</p></article>
+          <article class="feature-card"><div class="feature-number">07</div><div class="feature-icon">⌁</div><h3 data-i18n="fLearningTitle">Apprendre & réviser</h3><p data-i18n="fLearningText">Organisez votre mémorisation du Coran, sauvegardez vos sourates et reprenez votre progression.</p></article>
+          <article class="feature-card"><div class="feature-number">08</div><div class="feature-icon">✎</div><h3 data-i18n="fStudyTitle">Sciences islamiques</h3><p data-i18n="fStudyText">Étudiez l’aqidah, le fiqh, le tajwid, la langue arabe, l’adab et les sciences du hadith.</p></article>
+          <article class="feature-card"><div class="feature-number">09</div><div class="feature-icon">❞</div><h3 data-i18n="fNawawiTitle">Les 40 hadiths de Nawawi</h3><p data-i18n="fNawawiText">Approfondissez les grands fondements de la religion à travers un recueil incontournable.</p></article>
+          <article class="feature-card feature-card-quote"><div class="quote-mark">“</div><p data-i18n="quoteText">La régularité dans l’apprentissage commence par un accès simple aux ressources.</p><span data-i18n="quoteCaption">VOTRE ESPACE D’ÉTUDE</span></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="about section-wrap" id="a-propos">
+      <div class="about-emblem"><div class="emblem-frame"><img src="assets/risalah-emblem.png" alt="Emblème de l'application"></div><span class="arabic-line">طَلَبُ الْعِلْمِ</span></div>
+      <div class="about-copy"><div class="section-kicker" data-i18n="aboutKicker">NOTRE INTENTION</div><h2 data-i18n="aboutTitle">Un outil simple,<br><em>au service du savoir.</em></h2><p data-i18n="aboutText">الرسالة rassemble dans une seule application des outils pour lire le Coran, écouter ses récitations, étudier les livres et apprendre les sciences islamiques. Le projet souhaite rendre le savoir accessible au plus grand nombre.</p><p class="about-note" data-i18n="aboutNote">Pourquoi est-ce gratuit ? Parce que ce projet est une sadaqa : un travail offert dans l’espoir qu’il soit utile, qu’il aide chacun à apprendre et que sa récompense perdure. Aucun abonnement ni paiement n’est demandé pour accéder à l’application.</p><a class="button button-outline" href="#telecharger" data-i18n="aboutCta">Obtenir l’application <span>→</span></a></div>
+    </section>
+
+    <section class="sadaqa-section section-wrap" id="sadaqa"><div class="sadaqa-mark">صدقة جارية</div><div class="sadaqa-copy"><div class="section-kicker" data-i18n="sadaqaKicker">UN PROJET OFFERT</div><h2 data-i18n="sadaqaTitle">Le savoir se partage.<br><em>Cette application est une sadaqa.</em></h2><p data-i18n="sadaqaText">الرسالة est gratuit par choix. Il a été créé pour que chacun puisse accéder aux ressources, apprendre et avancer, sans barrière financière. Si l’application vous est utile, partagez-la autour de vous : vous aiderez peut-être quelqu’un à faire un pas dans son apprentissage.</p><div class="sadaqa-pill" data-i18n="sadaqaFoot">Gratuit · Sans abonnement · Pour tous</div></div></section>
+
+    <section class="support-section section-wrap" id="soutenir">
+      <div class="support-card">
+        <div class="support-symbol" aria-hidden="true">♡</div>
+        <div class="section-kicker" data-i18n="supportKicker">SOUTIEN FACULTATIF</div>
+        <h2 data-i18n="supportTitle">الرسالة est gratuit. <em>Et le restera.</em></h2>
+        <p data-i18n="supportText">L’application est entièrement gratuite : toutes ses fonctionnalités et tous ses contenus sont accessibles sans abonnement, sans paiement et sans formule premium. Le Patreon n’a aucun lien avec l’accès à l’application. Si vous choisissez de me soutenir, votre contribution m’aidera personnellement à développer d’autres projets. C’est un geste totalement facultatif, simplement pour m’encourager.</p>
+        <div class="support-points"><span data-i18n="supportPoint1">Aucun contenu payant</span><span data-i18n="supportPoint2">Aucun avantage réservé aux donateurs</span><span data-i18n="supportPoint3">Soutien libre, si vous le souhaitez</span></div>
+        <a class="button button-gold button-large" id="patreonButton" href="#soutenir" target="_blank" rel="noopener" data-i18n="supportCta">Me soutenir sur Patreon</a>
+        <small class="support-note" data-i18n="supportNote">Merci pour votre soutien. Il n’est jamais nécessaire pour utiliser الرسالة.</small>
+      </div>
+    </section>
+
+    <section class="download-section" id="telecharger">
+      <div class="download-ornament"></div>
+      <div class="download-content"><div class="section-kicker section-kicker-light" data-i18n="downloadKicker">COMMENCEZ DÈS AUJOURD’HUI</div><h2 data-i18n="downloadTitle">Votre bibliothèque<br><em>vous accompagne.</em></h2><p data-i18n="downloadText">Téléchargez gratuitement l’application Android et gardez vos ressources d’étude à portée de main.</p><a class="button button-gold button-large" id="downloadButton" href="https://github.com/VOTRE-PSEUDO/bibliotheque-islamique/releases/latest" target="_blank" rel="noopener"><span class="download-icon">↓</span><span data-i18n="downloadCta">Télécharger l’APK gratuit</span></a><div class="download-meta"><span>ANDROID</span><i></i><span data-i18n="versionLabel">Version</span> <strong id="appVersion">0.19.1</strong><i></i><span data-i18n="freeLabel">Gratuit</span></div><p class="install-hint" data-i18n="installHint">Le téléchargement s’effectue depuis GitHub Releases. Android peut demander l’autorisation d’installer une application provenant de cette source.</p></div>
+    </section>
+
+    <section class="contact-section section-wrap" id="contact">
+      <div class="section-kicker" data-i18n="contactKicker">PARTICIPER AU PROJET</div>
+      <div class="contact-grid"><h2 data-i18n="contactTitle">Une idée pour améliorer l’application ?</h2><div><p data-i18n="contactText">Vous avez une idée, une suggestion ou vous avez repéré un bug ? Envoyez-moi un e-mail à tout moment.</p><a class="button button-outline" id="contactEmailButton" href="mailto:VOTRE-ADRESSE-E-MAIL" data-i18n="contactCta">Envoyer une idée ou signaler un bug</a></div></div>
+    </section>
+
+    <section class="faq section-wrap" id="faq"><div class="section-heading"><div><div class="section-kicker" data-i18n="faqKicker">BESOIN D’AIDE ?</div><h2 data-i18n="faqTitle">Questions<br><em>fréquentes.</em></h2></div><p data-i18n="faqLead">Quelques informations utiles avant l’installation.</p></div>
+      <div class="faq-list">
+        <details><summary data-i18n="faq1q">L’application est-elle gratuite ? <span>+</span></summary><p data-i18n="faq1a">Oui. Le téléchargement de l’application est gratuit. Le site et les fichiers de publication sont hébergés sur GitHub.</p></details>
+        <details><summary data-i18n="faq2q">Comment installer le fichier APK ? <span>+</span></summary><p data-i18n="faq2a">Téléchargez le fichier APK depuis la page des versions GitHub, ouvrez-le sur votre téléphone Android puis autorisez l’installation si Android vous le demande.</p></details>
+        <details><summary data-i18n="faq3q">L’application fonctionne-t-elle sans Internet ? <span>+</span></summary><p data-i18n="faq3a">Certaines fonctions et ressources sont disponibles localement, tandis que les contenus en streaming et certaines ressources nécessitent une connexion Internet.</p></details>
+        <details><summary data-i18n="faq4q">Où trouver les nouvelles versions ? <span>+</span></summary><p data-i18n="faq4a">Les mises à jour sont publiées dans la section Releases du dépôt GitHub officiel.</p></details>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer"><div class="footer-main"><a class="brand footer-brand" href="#accueil"><img src="assets/risalah-emblem.png" alt=""><span><strong>الرسالة</strong><small>LE SAVOIR À PORTÉE DE MAIN</small></span></a><p data-i18n="footerText">Un espace de lecture, d’apprentissage et de révision.</p><a class="footer-download" href="#telecharger" data-i18n="footerDownload">Télécharger gratuitement ↗</a></div><div class="footer-bottom"><span>© <span id="year"></span> الرسالة</span><span data-i18n="footerFree">Projet gratuit · Android</span><a href="#accueil" data-i18n="backTop">Retour en haut ↑</a></div></footer>
+  <script src="config.js"></script><script src="script.js"></script>
+</body>
+</html>
