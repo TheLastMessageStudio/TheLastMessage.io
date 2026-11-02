@@ -34,3 +34,5 @@ body{background:#0b1712;color:#eee9dc}
 .header-support{border-color:#d8b46a;color:#f0d99c!important;background:rgba(216,180,106,.08)}
 .header-support:hover{background:rgba(216,180,106,.18)}
 @media(max-width:650px){.header-actions .header-support{display:inline-flex;padding:8px 10px;font-size:10px}.header-actions .header-download{display:none}}
+
+.download-buttons{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}

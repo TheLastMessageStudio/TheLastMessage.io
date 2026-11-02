@@ -16,7 +16,7 @@ Ce dossier est la mise à jour du site existant : il conserve la structure, le d
 - Dépôt : https://github.com/TheLastMessageStudio/The-Message-App
 - Releases : https://github.com/TheLastMessageStudio/The-Message-App/releases/latest
 - APK : https://github.com/TheLastMessageStudio/The-Message-App/releases/latest/download/app-release.apk
-- Version affichée : 0.20.1
+- Version affichée : 0.21.8
 
 Le bouton de téléchargement pointe vers le dernier APK nommé `app-release.apk`. Le lien fonctionnera lorsque cette pièce jointe aura été publiée dans une Release GitHub.
 
